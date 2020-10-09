@@ -43,8 +43,13 @@ doExponentButton.addEventListener("click", function() {
 })
 
 doFactorialButton.addEventListener("click", function() {
-    let result = factorial(Number(factorialInput.value));
-    document.getElementById("factorial-result").innerHTML = result;
+    if (Number(factorialInput.value) < 1) {
+        alert("Please choose a number greater than 0");
+    }
+    else {
+        let result = factorial(Number(factorialInput.value));
+        document.getElementById("factorial-result").innerHTML = result;
+    }
 })
 
 /*
@@ -58,11 +63,15 @@ function multiply(firstNum, secondNum) {
     let loop = 0;
     let multResult = 0;
     console.log ("multiplying " + firstNum + " X " + secondNum)
-    while (loop < secondNum) {
-        multResult += firstNum;
+    while (loop < Math.abs(secondNum)) {
+        multResult = add(multResult, Math.abs(firstNum));
         loop++;
     }
 
+    // Fix up the sign
+    if ((firstNum > 0 && secondNum < 0) || (firstNum < 0 && secondNum > 0)) {
+        multResult = multResult * -1;
+    }
     console.log("result: " + multResult)
     return(multResult);
 }
@@ -70,17 +79,21 @@ function multiply(firstNum, secondNum) {
 function power(number, power) {
     let loop = 0;
     let result = 1;
+
     if (power === 0) {
         result = 1;
     }
     else {
-        while (loop < power) {
+        while (loop < Math.abs(power)) {
             result = multiply(result, number);
             console.log("Result is " + result)
             loop++;
         }
     }
 
+    if (power < 0) {
+        result = 1 / result;
+    }
     return (result);
 }
 
