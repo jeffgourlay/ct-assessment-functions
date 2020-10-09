@@ -69,6 +69,7 @@ function multiply(firstNum, secondNum) {
     }
 
     // Fix up the sign
+    // I hope this isn't cheating since all I'm doing is correcting the sign of the result
     if ((firstNum > 0 && secondNum < 0) || (firstNum < 0 && secondNum > 0)) {
         multResult = multResult * -1;
     }
