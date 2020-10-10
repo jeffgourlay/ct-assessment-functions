@@ -29,17 +29,17 @@ Event listeners
 */
 doAdditionButton.addEventListener("click", function() {
     let sum = add(Number(firstAddendInput.value), Number(secondAddendInput.value));
-    document.getElementById("add-result").innerHTML = sum.toLocaleString();
+    document.getElementById("add-result").innerHTML = sum.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 8});
 });
 
 doMultiplicationButton.addEventListener("click", function() {
     let product = multiply(Number(firstMultInput.value),Number(secondMultInput.value));
-    document.getElementById("multiply-result").innerHTML = product.toLocaleString();
+    document.getElementById("multiply-result").innerHTML = product.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 8});
 });
 
 doExponentButton.addEventListener("click", function() {
     let result = power(Number(firstExponentInput.value), Number(secondExponentInput.value));
-    document.getElementById("power-result").innerHTML = result.toLocaleString();
+    document.getElementById("power-result").innerHTML = result.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 8});
 
 });
 
@@ -49,7 +49,7 @@ doFactorialButton.addEventListener("click", function() {
     }
     else {
         let result = factorial(Number(factorialInput.value));
-        document.getElementById("factorial-result").innerHTML = result.toLocaleString();
+        document.getElementById("factorial-result").innerHTML = result.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 8});
     }
 });
 
@@ -59,7 +59,7 @@ doFibonacciButton.addEventListener("click", function() {
     }
     else {
         let result = fibonacci(Number(fibonacciInput.value));
-        document.getElementById("fibonacci-result").innerHTML = result.toLocaleString();
+        document.getElementById("fibonacci-result").innerHTML = result.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 8});
     }
 
 })
@@ -103,8 +103,11 @@ function power(number, power) {
         }
     }
 
+    // This isn't working right
     if (power < 0) {
+        console.log("Before " + result + " " + 1/result);
         result = 1 / result;
+        console.log("After " + result + " " + 1/result);
     }
     return (result);
 }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Monoton&display=swap&family=Rye');
 * {
     background-color: lightgreen;
 }
@@ -10,6 +11,17 @@ input {
     background-color:  white;
 }
 
+h1, h2 {
+    font-family: 'Rye';
+}
+
+h6 {
+    font-family: 'Monoton';
+}
+
+span {
+    font-family: 'Times New Roman';
+}
 #main {
     padding: .1% 0 .1% 0;
     columns: 400px 2;
@@ -17,4 +29,5 @@ input {
     column-rule: 8px groove rosybrown;
     font-variant: small-caps;
     border: 5px double rosybrown;
+    font-family: Monoton;
 }
