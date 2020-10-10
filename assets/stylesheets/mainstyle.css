@@ -14,7 +14,7 @@ input {
     padding: .1% 0 .1% 0;
     columns: 400px 2;
     column-gap: 100px;
-    column-rule: 2px groove rosybrown;
+    column-rule: 8px groove rosybrown;
     font-variant: small-caps;
     border: 5px double rosybrown;
 }
