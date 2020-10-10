@@ -149,5 +149,4 @@ function fibonacci(number) {
     }
 
     return (result);
-
 }

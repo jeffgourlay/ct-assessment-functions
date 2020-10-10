@@ -7,51 +7,54 @@
 </head>
 <body>
     <link rel='stylesheet' href='assets/stylesheets/mainstyle.css'>
-    <h1>Welcome  to the mathnasium!</h1>
+    <img src='assets/images/beaglebros_logo.jpg' alt='Beagle Bros Logo'>
+    <h6>Not affiliated with, or endorsed by, Beagle Bros Software.<br>Just an old man having a little fun and reminiscing.</h6>
+    <h1>Welcome to the mathnasium!</h1>
     <h2>All your mathematical needs under one roof</h2>
-    <br><br><br>
-
-    <div id='addition-div'>
+    <h6>(Well, not all, yet.  Our Department of Subtraction and Division is not yet completed. Please bear with us.)</h6>
+    <br>
+    <div id='main'>
+        <div id='addition-div'>
         Add two numbers:<br>
         <label for='first-addend'>First number</label>
         <input type='number' id='first-addend'><br>
         <label for='second-addend'>Second number</label>
         <input type='number' id='second-addend'><br>
         <button type='button' id='do-addition'>Equals</button>&nbsp<span id='add-result'></span><br>
-    </div>
-    <br><br><br>
-    <div id='multiplication-div'>
+        </div>
+        <br><br><br>
+        <div id='multiplication-div'>
         Multiply two numbers:<br>
         <label for='first-multiplicand'>First number</label>
         <input type='number' id='first-multiplicand'><br>
         <label for='second-multiplicand'>Second number</label>
         <input type='number' id='second-multiplicand'><br>
         <button type='button' id='do-multiplication'>Equals</button>&nbsp<span id='multiply-result'></span><br>
-    </div>
-    <br><br><br>
-    <div id='power-div'>
+        </div>
+        <br><br><br>
+        <div id='power-div'>
         Raise a number to a power:<br>
         <label for='number'>Number</label>
         <input type='number' id='number'><br>
         <label for='power'>Raised to the power of</label>
         <input type='number' id='power'><br>
         <button type='button' id='do-exponent'>Equals</button>&nbsp<span id='power-result'></span><br>
-    </div>    
-    <br><br><br>
-    <div id='factorial-div'>
+        </div>    
+        <br><br><br>
+        <div id='factorial-div'>
         Factorial:<br>
         <label for='factorial'>Number</label>
         <input type='number' id='factorial'><br>
         <button type='button' id='do-factorial'>Factorial</button>&nbsp<span id='factorial-result'></span><br>
-    </div>
-    <br><br><br>
-    <div id='fibonacci-div'>
+        </div>
+        <br><br><br>
+        <div id='fibonacci-div'>
         Fibonacci sequence:
         <label for='fibonacci'>n<sup>th</sup> number in sequence</label>
         <input type='number' id='fibonacci'><br>
         <button type='button' id='do-fibonacci'>Number is</button>&nbsp<span id='fibonacci-result'></span><br>
+        </div>
     </div>
-
     <script src='assets/scripts/main.js'></script>
 </body>
 </html>
