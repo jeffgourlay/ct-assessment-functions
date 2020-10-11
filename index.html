@@ -9,7 +9,9 @@
     <link rel='stylesheet' href='assets/stylesheets/mainstyle.css'>
     In loving memory;<br>
     <img src='assets/images/beaglebros_logo.jpg' alt='Beagle Bros Logo'><br>
-    The Mathnasium is NOT affiliated with, or endorsed by, Beagle Bros Software.<br>Just an old man having a little fun and reminiscing.
+    <div id='disclaimer'>
+        The Mathnasium is NOT affiliated with, or endorsed by, Beagle Bros Software.<br>Just an old man having a little fun and reminiscing.
+    </div>
     <h1>Welcome to The Mathnasium!</h1>
     <h2>All your mathematical needs under one roof</h2>
     <h6>(Well, not all, yet.  Our Department of Subtraction and Division is not yet completed. Please bear with us.)</h6>
@@ -17,41 +19,38 @@
     Addition, multiplication, exponents, factorial and Fibonacci Sequence
     <div id='main'>
         <div id='addition-div'>
-            Add two numbers:<br>
+            <span class='span addition'>Add two numbers:</span><br>
             <label for='first-addend'>First number</label>
             <input type='number' id='first-addend'><br>
             <label for='second-addend'>Second number</label>
             <input type='number' id='second-addend'><br>
             <button type='button' id='do-addition'>Equals</button>&nbsp<span id='add-result'></span><br>
         </div>
-        <br><br><br>
         <div id='multiplication-div'>
-            Multiply two numbers:<br>
+            <span class='span multiply'>Multiply two numbers:</span><br>
             <label for='first-multiplicand'>First number</label>
             <input type='number' id='first-multiplicand'><br>
             <label for='second-multiplicand'>Second number</label>
             <input type='number' id='second-multiplicand'><br>
             <button type='button' id='do-multiplication'>Equals</button>&nbsp<span id='multiply-result'></span><br>
         </div>
-        <br><br><br>
         <div id='power-div'>
-            Raise a number to a power:<br>
+            <span class='span exponent'>Raise a number to a power:<br>
             <label for='number'>Number</label>
             <input type='number' id='number'><br>
             <label for='power'>Raised to the power of</label>
             <input type='number' id='power'><br>
             <button type='button' id='do-exponent'>Equals</button>&nbsp<span id='power-result'></span><br>
         </div>    
-        <br><br><br>
         <div id='factorial-div'>
-            Factorial:<br>
+            <span class='span factorial'>Factorial:</span><br>
             <label for='factorial'>Number</label>
             <input type='number' id='factorial'><br>
             <button type='button' id='do-factorial'>Factorial</button>&nbsp<span id='factorial-result'></span><br>
         </div>
-        <br><br><br>
+        <br><br>
         <div id='fibonacci-div'>
-            Fibonacci sequence:
+            <span class='span fibonacci'>Fibonacci sequence:</span><br>
             <label for='fibonacci'>n<sup>th</sup> number in sequence</label>
             <input type='number' id='fibonacci'><br>
             <button type='button' id='do-fibonacci'>Number is</button>&nbsp<span id='fibonacci-result'></span><br>
